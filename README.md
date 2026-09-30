@@ -1,68 +1,114 @@
-Sistema de Gerenciamento de Restaurante
-Um sistema web para auxiliar no gerenciamento de restaurantes, permitindo o controle de cardápio, mesas e pedidos em um único ambiente.
+ Sistema de Cardápio e Pedidos
 
-O projeto está sendo desenvolvido como parte da disciplina de Engenharia de Software, com foco na aplicação de conceitos de análise, projeto, desenvolvimento, testes e documentação de sistemas.
+Um sistema web desenvolvido para facilitar o gerenciamento do cardápio e dos pedidos de um restaurante.
 
-Objetivo
-O sistema tem como objetivo facilitar o gerenciamento das operações básicas de um restaurante, permitindo que funcionários possam:
+O projeto está sendo desenvolvido como parte da disciplina de Engenharia de Software, com foco na aplicação prática de conceitos de levantamento de requisitos, modelagem, desenvolvimento, testes e documentação de software.
 
-Cadastrar e gerenciar produtos do cardápio;
+ Objetivo
 
-Organizar produtos por categorias;
+O sistema tem como objetivo fornecer uma solução simples para que o restaurante possa:
 
-Controlar as mesas do restaurante;
+Gerenciar os produtos disponíveis no cardápio;
 
-Registrar pedidos;
+Organizar os produtos por categorias;
+
+Permitir a realização de pedidos;
 
 Acompanhar o status dos pedidos;
 
-Consultar informações básicas de vendas.
+Controlar o acesso ao sistema por meio de autenticação.
 
-A proposta é desenvolver uma solução simples, intuitiva e adequada à realidade de um pequeno restaurante.
+ Funcionalidades
+ Autenticação
 
-Funcionalidades
-#Autenticação
-Cadastro de usuários;
+O sistema possui um mecanismo de autenticação para controlar o acesso às funcionalidades administrativas.
+
+Cadastro de usuário;
 
 Login;
 
 Logout;
 
-Controle básico de acesso.
+Autenticação por token;
 
-🍔 Cardápio
-Cadastro de categorias;
+Proteção das páginas restritas.
 
-Cadastro de produtos;
+ Cardápio
 
-Edição de produtos;
+Permite o gerenciamento dos produtos oferecidos pelo restaurante.
 
-Remoção de produtos;
+Cadastrar produtos;
 
-Controle de disponibilidade;
+Editar produtos;
 
-Definição de preço e descrição.
+Remover produtos;
 
-🪑 Mesas
-Cadastro de mesas;
+Visualizar produtos;
 
-Visualização das mesas;
+Definir nome e descrição;
 
-Identificação de mesas livres e ocupadas;
+Definir preço;
 
-Associação de pedidos às mesas.
+Organizar produtos por categoria;
 
-🛒 Pedidos
-Criação de pedidos;
+Ativar ou desativar produtos.
 
-Adição de produtos;
+Exemplo:
 
-Alteração de quantidade;
+Cardápio
+│
+├── Hambúrgueres
+│   ├── X-Burger
+│   └── X-Salada
+│
+├── Porções
+│   ├── Batata Frita
+│   └── Nuggets
+│
+└── Bebidas
+    ├── Refrigerante
+    └── Suco
 
-Remoção de itens;
+ Pedidos
 
-Cálculo do valor total;
+Permite realizar e acompanhar pedidos utilizando os produtos disponíveis no cardápio.
 
-Adição de observações;
+Criar pedido;
 
-Atualização do status do pedido.
+Adicionar produtos ao pedido;
+
+Alterar quantidade;
+
+Remover produtos do pedido;
+
+Visualizar os itens do pedido;
+
+Calcular o valor total;
+
+Adicionar observações;
+
+Acompanhar o status do pedido.
+
+ Status do Pedido
+
+Os pedidos poderão possuir diferentes estados:
+
+PENDENTE
+   ↓
+EM PREPARO
+   ↓
+PRONTO
+   ↓
+FINALIZADO
+
+ Equipe
+
+Projeto desenvolvido por uma equipe de 5 estudantes de Engenharia de Software.
+
+Integrante	Área
+Integrante 1	Backend
+Integrante 2	Frontend
+Integrante 3	Banco de Dados
+Integrante 4	Testes e Documentação
+Integrante 5	Integração / Desenvolvimento
+
